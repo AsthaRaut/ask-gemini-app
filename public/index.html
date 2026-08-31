@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Gemini</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <div class="background-blur"></div>
+
+    <main class="container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-dot"></span>
+                <h1>Ask Gemini</h1>
+            </div>
+            <p class="subtitle">Ask anything. Get an AI-powered answer instantly.</p>
+        </header>
+
+        <section class="chat-card">
+            <div id="chat-window" class="chat-window">
+                <div class="empty-state">
+                    <p>Start a conversation ✨</p>
+                </div>
+            </div>
+
+            <form id="ask-form" class="input-row">
+                <input
+                    type="text"
+                    id="question-input"
+                    placeholder="Type your question..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" id="submit-btn">
+                    <span class="btn-text">Ask</span>
+                    <span class="btn-loader hidden"></span>
+                </button>
+            </form>
+        </section>
+
+        <footer class="app-footer">
+            <p>Built with Node.js, Express &amp; the Gemini API</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
