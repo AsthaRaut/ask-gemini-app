@@ -111,9 +111,3 @@ The `.env` file is excluded via `.gitignore` and should **never** be committed t
 - Add user authentication
 - Support for multiple chat sessions
 - Dark/light theme toggle
-
----
-
-## 📄 License
-
-This project is open source and available for learning purposes.
